@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_action"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.add.AddFragment">
+
+    <TextView
+        android:id="@+id/select_category_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Seleccione una Categoria"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_category_text">
+
+
+        <RadioButton
+            android:id="@+id/radio_trabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabajo" />
+
+        <RadioButton
+            android:id="@+id/radio_estudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estudio" />
+
+        <RadioButton
+            android:id="@+id/radio_compras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras" />
+
+        <RadioButton
+            android:id="@+id/radio_ocio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocio" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/select_priority_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="Seleccione una Prioridad"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_categories" />
+
+    <RadioGroup
+        android:id="@+id/priorities"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_priority_text">
+
+
+        <RadioButton
+            android:id="@+id/radio_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low Priority" />
+
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Priority" />
+
+        <RadioButton
+            android:id="@+id/radio_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Priority" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/action_description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:hint="@string/add_fragment_hint"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priorities" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_fragment_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_description_text" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

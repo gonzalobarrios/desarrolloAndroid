@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #008577</color>
+    <color name="colorPrimaryDark"> #00574B</color>
+    <color name="colorAccent"> #D81B60</color>
+
+    <color name="colorTrabajo"> #FFFF5722</color>
+    <color name="colorEstudio"> #FF4CAF50</color>
+    <color name="colorCompras"> #FF3F51B5</color>
+    <color name="colorOcio"> #FF9C27B0</color>
+
+</resources>
